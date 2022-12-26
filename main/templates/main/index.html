@@ -1,0 +1,76 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}PuzzolenteBarbone{% endblock %}
+
+{% block content %}
+			<h2 class="col-lg-3 col-md-4 col-xs-9">Доступні рецепти</h2>
+				<div class="cards">
+					<div class="card col-lg-4 col-md-6 col-xs-12">
+						<a href="{% url 'recipe_rizotto' %}">
+							<div class="shadow">
+								<img src="{% static 'img/foto-1548-0.jpg' %}">
+								<div class="descripteon">
+									<h5>Різотто</h5>
+									<span>Друга після пасти найвідоміша італійська страва, щоб міняти начинки та поєднання хоч щодня.</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="card col-lg-4 col-md-6 col-xs-12">
+						<a href="{% url 'recipe_ravioli' %}">
+							<div class="shadow">
+								<img src="{% static 'img/foto-1548-1.jpg' %}">
+								<div class="descripteon">
+									<h5>Равіолі</h5>
+									<span>Симпатичні пельмені з тіста для пасти з різноманітною начинкою. Спробуй зі шпинатом та рикоттою!</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="card col-lg-4 col-md-6 col-xs-12">
+						<a href="{% url 'recipe_carbonara' %}">
+							<div class="shadow">
+								<img src="{% static 'img/foto-1548-2.jpg' %}">
+								<div class="descripteon">
+									<h5>Карбонара</h5>
+									<span>Рецепт класичної італійської пасти з регіону Лаціо.</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="card col-lg-4 col-md-6 col-xs-12">
+						<a href="{% url 'recipe_balaneza' %}">
+							<div class="shadow">
+								<img src="{% static 'img/foto-1548-3.jpg' %}">
+								<div class="descripteon">
+									<h5>Болоньєзе</h5>
+									<span>Болоньєзе - це італійський м'ясний соус, який найчастіше подають з пастою або спагетті.</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="card col-lg-4 col-md-6 col-xs-12">
+						<a href="{% url 'recipe_lazania' %}">
+							<div class="shadow">
+								<img src="{% static 'img/foto-1548-4.jpg' %}">
+								<div class="descripteon">
+									<h5>Лазанья</h5>
+									<span>Своєрідна багатошарова запіканка з фаршем, грибами та кількома видами сиру.</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="card col-lg-4 col-md-6 col-xs-12">
+						<a href="{% url 'recipe_porcketa' %}">
+							<div class="shadow">
+								<img src="{% static 'img/foto-1548-5.jpg' %}">
+								<div class="descripteon">
+									<h5>Поркетта</h5>
+									<span>Запечений свинячий рулет із спеціями, який можна легко приготувати у духовці.</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+{% endblock %}

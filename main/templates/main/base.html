@@ -1,0 +1,78 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="icon" type="img/x-icon" href="{% static 'Chef-Hat-2-icon.png' %}">
+	<title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+	<header>
+		<div class="navbar">
+			<a href="{% url 'home' %}"><span class="logo1">PUZZOLENTE <span>BARBONE</span></span></a>
+			<div>
+				<button class="button1">Увійти</button>
+				<button class="button">Додати рецепт</button>
+			</div>
+		</div>
+	</header>
+	<div class="background_image">
+		<div class="main">
+			<div class="container">
+				<div class="search col-12">
+					<input placeholder="Пошук рецептів">
+					<hr>
+				</div>
+				{% block content %}{% endblock %}
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="logo">PUZZOLENTE BARBONE</div>
+			<hr>
+			<div class="info">
+				<div class="col-lg-4 col-md-4 col-xs-12">
+					<ul>
+						<li><a href="https://www.google.com/search?q=%23ItalianFood&sxsrf=ALiCzsZv3kp1WdKP9bzR0kgFM0V5n-1PwQ%3A1671995923523&source=hp&ei=E6KoY-3bHIHMrgSMjo2wCg&iflsig=AJiK0e8AAAAAY6iwIz5AgkWTIlNPy1JzWeZTgllYiTeK&ved=0ahUKEwitsdaYvpX8AhUBposKHQxHA6YQ4dUDCAc&uact=5&oq=%23ItalianFood&gs_lcp=Cgdnd3Mtd2l6EANQAFgAYJcGaABwAHgAgAEAiAEAkgEAmAEAwAEB&sclient=gws-wiz" target="_blank">#ItalianFood</a>
+						</li>
+						<li>
+							<a href="https://facebook.com" target="_blank"><img src="{% static 'img/Stores-ic-24-social-facebook.png' %}"></a>
+							<a href="https://instagram.com" target="_blank"><img src="{% static 'img/Stores-ic-24-social-instagram.svg' %}"></a>
+							<a href="https://twitter.com" target="_blank"><img src="{% static 'img/Stores-ic-24-social-twitter.svg' %}"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-4 col-xs-12">
+					<ul>
+						<li><a href="#">Про нас</a></li>
+						<li><a href="#">Допомога</a></li>
+						<li><a href="#">Стати спонсором</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-4 col-xs-12">
+					<ul>
+						<li><a href="#">Часті питання</a></li>
+						<li><a href="#">FAQs</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<div class="store">
+				<a href="https://play.google.com" target="_blank"><img src="{% static 'img/Stores-en_badge_web_generic-cf6dad406f.png' %}"></a>
+				<a href="https://www.apple.com/app-store" target="_blank"><img src="{% static 'img/Stores-Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.png' %}"></a>
+			</div>
+			<hr>
+			<div class="end_footer">
+				<span>@ 2022 PUZZOLENTE BARBONE Inc.</span>
+				<a href="#" target="_blank">Обробка персональних даних</a>
+				<a href="#" target="_blank">Угода користувача</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

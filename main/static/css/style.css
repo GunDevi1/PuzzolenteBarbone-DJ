@@ -1,0 +1,254 @@
+@font-face {
+	font-family: 'Slimamif'; 
+	src: local('Slimamif'),
+	url(../fonts/SlimamifBold.ttf); 
+
+}
+
+body {
+	font-family: Roboto, sans-serif;
+	margin: 0 auto;
+}
+
+/* Шапка */
+
+header {
+	box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+	position: sticky;
+	top: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.navbar, .navbar div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	line-height: 12px;
+	padding: 12px 24px;
+	background-color: #fff;
+}
+
+.main .container {
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+.logo1 {
+	font-size: 32px;
+	font-family: Slimamif;
+	color: blue;
+}
+
+.logo1 span {
+	color: #c9bd12;
+}
+
+.button, .button1 {
+	font-size: 18px;
+	padding: 14px 20px;
+	background-color: #fff;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+
+.button1 {
+	margin-right: 8px;
+}
+
+.navbar div {
+	padding: 0;
+}
+
+/* Шапка */
+
+/* Тело */
+
+.background_image {
+	background: url("../img/th-3061493082.jpeg") no-repeat center top;
+	background-size: 100% 100%;
+}
+
+.main {
+	margin: 0 100px;
+	background-color: #fff;
+	padding-bottom: 70px;
+}
+
+.search input {
+	width: 100%;
+	font-size: 16px;
+	border: none;
+	outline: none;
+}
+
+.search {
+	padding: 56px 0;
+}
+
+hr {
+	margin: 0;
+	border: 1px solid #757575;;
+}
+
+h2, h1 {
+	font-weight: 400;
+	color: #1D1D1D;
+}
+
+.end h1 {
+	text-align: center;
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card {
+	margin-bottom: 16px;
+}
+
+p {
+	font-weight: 100;
+}
+
+.card img {
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card h5 {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.descripteon {
+	padding: 0 20px 10px 20px;
+}
+
+.shadow {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	height: 100%;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 32px;
+}
+
+.container_recipe span {
+	line-height: 32px;
+	font-size: 1.2em;
+}
+
+em {
+	text-decoration: underline;
+}
+
+.img_dish img {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+/* Тело */
+
+/* Подвал */
+
+footer {
+	background-color: #262626;
+}
+
+footer .container {
+	margin: 0 auto;
+}
+
+.logo {
+	color: #fff;
+	font-family: Slimamif;
+	padding: 50px 0 40px 0;
+	font-size: 32px;
+}
+
+ul {
+	list-style: none;
+}
+
+li, li a {
+	color: #fff;
+	padding: 12px 0;
+	text-decoration: none;
+}
+
+.info, .store, .end_footer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.store {
+	padding: 41px 0;
+	justify-content: center;
+}
+
+.store a {
+	padding: 0 20px;
+}
+
+.end_footer span, .end_footer a {
+	padding: 40px 0;
+	color: #fff;
+	text-decoration: none;
+}
+
+.end_footer {
+	justify-content: space-between;
+}
+
+/* Подвал */
+
+/* Моб. версия */
+
+@media screen and (max-width: 576px) {
+	.button {
+		display: none;
+	}
+
+	.main {
+	margin: 0 50px;
+	background-color: #fff;
+	padding-bottom: 70px;
+	}
+
+	.background_image {
+	background: url("../img/flag_italian.png") no-repeat center top;
+	background-size: 100% 100%;
+	}
+
+	.logo1 {
+		font-size: 24px;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
+}
+
+/* Моб. версия */
+
+/* Анимации */
+
+button:hover {
+	background-color: #cccccc;
+}
+
+button:focus {
+	outline-style: solid;
+	outline-color: #cccccc;
+	outline-width: 3px;
+}
+
+/* Анимации */
